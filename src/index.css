@@ -1,0 +1,105 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rawline", "Arial", sans-serif;
+}
+
+/* Fundo da página */
+body {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container principal */
+.container {
+  background-color: #ffffff;
+  padding: 32px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  border-top: 4px solid #1351b4; /* azul GOV */
+}
+
+/* Título */
+.container h1 {
+  font-size: 22px;
+  color: #071d41;
+  margin-bottom: 24px;
+}
+
+/* Grupo do formulário */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Input de CEP */
+.form-group input[type="text"] {
+  height: 48px;
+  padding: 0 12px;
+  font-size: 16px;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  color: #212529;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Placeholder */
+.form-group input::placeholder {
+  color: #6c757d;
+}
+
+/* Foco no input */
+.form-group input:focus {
+  outline: none;
+  border-color: #1351b4;
+  box-shadow: 0 0 0 2px rgba(19, 81, 180, 0.2);
+}
+
+/* Botão */
+.form-group button {
+  height: 48px;
+  background-color: #1351b4;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+/* Hover do botão */
+.form-group button:hover {
+  background-color: #0f3f8f;
+}
+
+/* Foco acessível no botão */
+.form-group button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(19, 81, 180, 0.35);
+}
+
+/* Botão desabilitado */
+.form-group button:disabled {
+  background-color: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .container {
+    padding: 24px;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+}
